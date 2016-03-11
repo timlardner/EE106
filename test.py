@@ -12,3 +12,5 @@ class TestFunctionMethods(unittest.TestCase):
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestFunctionMethods)
     unittest.TextTestRunner(verbosity=2).run(suite)
+
+    
