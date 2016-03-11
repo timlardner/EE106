@@ -3,7 +3,7 @@ def getIntegers():
     return int1,int2
 
 def doOr(int1, int2):
-    return # Do the 'or' operation and return either boolean true or false
+    return (int1 or int2)# print the name to the console here
 
 if __name__ == '__main__':
     int1, int2 = getIntegers()
