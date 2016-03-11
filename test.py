@@ -1,13 +1,13 @@
 import unittest
-from function import addition
+from Chapter23 import doOr
 
 class TestFunctionMethods(unittest.TestCase):
 
-  def test_addition(self):
-      self.assertEqual(addition(1,1), 2)
-      self.assertEqual(addition(-1,1), 0)
-      self.assertEqual(addition(4,4), 8)
-      self.assertEqual(addition(-4,-4), -8)
+  def test_or(self):
+    self.assertTrue(doOr(1,1))
+    self.assertTrue(doOr(0,1))
+    self.assertTrue(doOr(1,0))
+    self.assertFalse(doOr(0,0))
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestFunctionMethods)
